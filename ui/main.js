@@ -5,6 +5,7 @@ element.innerHTML='new world';
 //move the image
 var image= document.getElementById('pic');
 image.onclick = function(){
+    var interval =setInterval(moveLeft,100);
     image.style.marginLeft="1000px";
 };
 
