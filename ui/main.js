@@ -1,7 +1,7 @@
 //move the image
 var image= document.getElementById('img');
 image.onclick = function(){
-    image.style.marginleft="100px";
+    image.style.marginLeft="100px";
 };
 
 // code for counter
