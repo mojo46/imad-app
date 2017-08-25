@@ -4,9 +4,13 @@ element.innerHTML='new world';
 
 //move the image
 var image= document.getElementById('pic');
+var marginleft=0;
 image.onclick = function(){
-    var interval =setInterval(moveLeft,100);
-    image.style.marginLeft="1000px";
+    var interval =setInterval(function(){
+     marginleft=marginleft -10;
+     image.style.marginLeft= marginLeft + 'px';
+    },100);
+    
 };
 
 // code for counter
