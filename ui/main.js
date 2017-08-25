@@ -1,3 +1,9 @@
+//move the image
+var image= document.getElementById('img');
+image.onclick = function(){
+    image.style.marginleft="100px";
+};
+
 // code for counter
 var button = document.getElementById('b1');
 var counter=0;
