@@ -1,5 +1,7 @@
+
+
 //move the image
-var image= document.getElementById('img');
+var image= document.getElementById('pic');
 image.onclick = function(){
     image.style.marginLeft="100px";
 };
