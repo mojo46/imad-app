@@ -1,6 +1,6 @@
 //edit content on html
 var element = document.getElementById('person');
-alert(element);
+alert('hai this is elements alert box');
 element.innerHTML='new world';
 
 //move the image
