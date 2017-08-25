@@ -10,7 +10,7 @@ function marginright(){
      image.style.marginLeft= marginLeft + 'px';
     }
 image.onclick = function(){
-    var interval =setInterval(marginright,100);
+    var interval =setInterval(marginright,10);
     
 };
 
