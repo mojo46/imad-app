@@ -1,4 +1,4 @@
-var button = document.getElementById('counter');
+var button = document.getElementById("counter");
 var counter=0;
 button.onclick = function(){
     //Make the request to counter
@@ -8,7 +8,7 @@ button.onclick = function(){
     //renser the variable in the current span
     
     counter= counter+1;
-    var span= document.getElementById('count');
+    var span= document.getElementById("count");
     span.innerHTML = counter.toString();
     
     
