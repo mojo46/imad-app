@@ -4,12 +4,13 @@ element.innerHTML='new world';
 
 //move the image
 var image= document.getElementById('pic');
-var marginleft=0;
-image.onclick = function(){
-    var interval =setInterval(function(){
-     marginleft=marginleft -10;
+var marginLeft=0;
+function marginright(){
+     marginLeft=marginLeft -10;
      image.style.marginLeft= marginLeft + 'px';
-    },100);
+    }
+image.onclick = function(){
+    var interval =setInterval(marginright,100);
     
 };
 
