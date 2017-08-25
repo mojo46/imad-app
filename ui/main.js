@@ -6,7 +6,7 @@ element.innerHTML='new world';
 var image= document.getElementById('pic');
 var marginLeft=0;
 function marginright(){
-     marginLeft=marginLeft + 10 ;
+     marginLeft=marginLeft - 10 ;
      image.style.marginLeft= marginLeft + 'px';
     }
 image.onclick = function(){
