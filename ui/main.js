@@ -21,24 +21,14 @@ button.onclick= function(){
     
    //Make the request to the counter End point
     var request = new XMLHttpRequest();
+    request.open('GET','http://mjksv007.imad.hasura-app.io/counter',true);
+    if(request !== null){
+        alert('request open success');
+    }
+    request.send('null');
     
     //Capture the response and store it in avariable
-    request.onreadystatechange = function() {
-      if(request.readystate === XMLHttpRequest.DONE){
-          if(request.status === 200){
-              var counter = responseText;
-              if(counter !== null){
-              alert('counter response text');}
-              span = document.getElementById('s1');
-              span.innerHTML = counter.toString();
-          }
-      }
-      // request not completed
-      else{
-          alert('request not complete');
-      }
-    };
     
-    request.open('GET','http://mjksv007.imad.hasura-app.io/counter',true);
-    request.send('null');
+    
+    
 };
