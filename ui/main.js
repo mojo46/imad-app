@@ -20,12 +20,6 @@ button.onclick= function(){
     
    //Make the request to the counter End point
     var request = new XMLHttpRequest();
-    request.open('GET','http://mjksv007.imad.hasura-app.io/counter',true);
-    request.send('null');
-    if(request.open !== null){
-        var as = request.toString();
-        alert(as);
-    }
     
     //Capture the response and store it in avariable
     request.onreadystatechange = function(){
@@ -36,10 +30,9 @@ button.onclick= function(){
                 document.getElementById("s1").innerHTML = counter.toString();
             }
         }
-        else{
-            alert('request not in ready state');
-        }
     };
-    
+    request.open('GET','http://mjksv007.imad.hasura-app.io/counter',true);
+    request.send('null');
+        
     
 };
