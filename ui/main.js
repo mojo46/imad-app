@@ -28,7 +28,19 @@ button.onclick= function(){
     }
     
     //Capture the response and store it in avariable
-    
+    request.onreadystatechange = function(){
+        if(request.readyState === XMLHttpRequest.DONE){
+            // do some action
+            if(request.status === 200){
+                var counter = request.responseText;
+                var span = document.getElementById('s1');
+                span.innerHTML = " span change";
+            }
+        }
+        else{
+            alert('request not in ready state');
+        }
+    };
     
     
 };
