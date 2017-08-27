@@ -21,8 +21,6 @@ button.onclick= function(){
     
     //Make the request to the counter End point
     var request = new XMLHttpRequest();
-    request.open('GET','http://mjksv007.imad.hasura-app.io/counter',true);
-    request.send('null');
     
     //Capture the response and store it in avariable
     request.onreadystatechange = function() {
@@ -35,4 +33,7 @@ button.onclick= function(){
       }  
       // request not completed
     };
+    
+    request.open('GET','http://mjksv007.imad.hasura-app.io/counter',true);
+    request.send('null');
 };
