@@ -1,6 +1,6 @@
 //edit content on html
 var element = document.getElementById('person');
-element.innerHTML='new world';
+element.innerHTML='MANOJ MOJO';
 
 //move the image
 var image= document.getElementById('pic');
