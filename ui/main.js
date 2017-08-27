@@ -16,15 +16,15 @@ image.onclick = function(){
 
 // code for counter
 var button = document.getElementById('b1');
-var span;
 button.onclick= function(){
     
    //Make the request to the counter End point
     var request = new XMLHttpRequest();
     request.open('GET','http://mjksv007.imad.hasura-app.io/counter',true);
     request.send('null');
-    if(request.send !== null){
-        alert('request open success');
+    if(request.open !== null){
+        var as = request.toString();
+        alert(as);
     }
     
     //Capture the response and store it in avariable
