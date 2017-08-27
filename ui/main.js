@@ -21,13 +21,15 @@ button.onclick= function(){
     
    //Make the request to the counter End point
     var request = new XMLHttpRequest();
+    if(request !== null){
+    alert();}
     
     //Capture the response and store it in avariable
     request.onreadystatechange = function() {
       if(request.readystate === XMLHttpRequest.DONE){
           if(request.status === 200){
               var counter = responseText;
-              if(counter != null){
+              if(counter !== null){
               alert('counter');}
               span = document.getElementById('s1');
               span.innerHTML = counter.toString();
