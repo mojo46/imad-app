@@ -16,10 +16,23 @@ image.onclick = function(){
 
 // code for counter
 var button = document.getElementById('click_me');
-var counter=0;
-var span;
+
 button.onclick= function(){
-    counter =counter +1;
-    span = document.getElementById('span1');
-    span.innerHTML = counter.toString();
+    
+    //Make the request to the counter End point
+    var request = new XMLHttpRequest();
+    request.open('GET','http://mjksv007.imad.hasura-app.io/counter',true);
+    request.send('null');
+    
+    //Capture the response and store it in avariable
+    request.onreadystatechange = function() {
+      if(request.readystate === XMLHttpRequest.DONE){
+          if(request.status === 200){
+              var counter = responseText;
+              var span = document.getElementById('span1');
+              span1.innerHTML = counter.toString();
+          }
+      }  
+      // request not completed
+    };
 };
