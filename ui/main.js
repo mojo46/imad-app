@@ -27,7 +27,9 @@ button.onclick= function(){
             // do some action
             if(request.status === 200){
                 var counter = request.responseText;
-                document.getElementById("s1").innerHTML = counter.toString();
+                var spn = document.getElementById("s1");
+                spn.innerHTML = counter.toString();
+                //document.getElementById("s1").innerHTML = counter.toString();
             }
         }
     };
