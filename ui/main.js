@@ -15,11 +15,11 @@ image.onclick = function(){
 };
 
 // code for counter
-var button = document.getElementById('b1');
+var button = document.getElementById('click_me');
 var counter=0;
 var span;
 button.onclick= function(){
     counter =counter +1;
-    span = document.getElementById('s1');
+    span = document.getElementById('span1');
     span.innerHTML = counter.toString();
 };
