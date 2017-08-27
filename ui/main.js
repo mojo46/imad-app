@@ -22,10 +22,10 @@ button.onclick= function(){
    //Make the request to the counter End point
     var request = new XMLHttpRequest();
     request.open('GET','http://mjksv007.imad.hasura-app.io/counter',true);
+    request.send('null');
     if(request !== null){
         alert('request open success');
     }
-    request.send('null');
     
     //Capture the response and store it in avariable
     
