@@ -33,9 +33,7 @@ button.onclick= function(){
             // do some action
             if(request.status === 200){
                 var counter = request.responseText;
-                document.write(counter);
-                var span = document.getElementById('s1');
-                span.innerHTML = " span change";
+                document.getElementById("s1").innerHTML = counter.toString();
             }
         }
         else{
