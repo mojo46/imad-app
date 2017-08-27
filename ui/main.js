@@ -19,18 +19,16 @@ var button = document.getElementById('b1');
 var span
 button.onclick= function(){
     
- /*   //Make the request to the counter End point
+   //Make the request to the counter End point
     var request = new XMLHttpRequest();
     
     //Capture the response and store it in avariable
     request.onreadystatechange = function() {
       if(request.readystate === XMLHttpRequest.DONE){
-          document.write("request is done");
           if(request.status === 200){
-              document.write("status is 200");
               var counter = responseText;
               span = document.getElementById('s1');
-              span1.innerHTML = counter.toString();
+              span.innerHTML = counter.toString();
           }
       }  
       // request not completed
@@ -38,5 +36,4 @@ button.onclick= function(){
     
     request.open('GET','http://mjksv007.imad.hasura-app.io/counter',true);
     request.send('null');
- */
 };
