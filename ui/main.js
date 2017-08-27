@@ -15,7 +15,7 @@ image.onclick = function(){
 };
 
 // code for counter
-var button = document.getElementById('click_me');
+var button = document.getElementById('b1');
 var span
 button.onclick= function(){
     
@@ -27,7 +27,7 @@ button.onclick= function(){
       if(request.readystate === XMLHttpRequest.DONE){
           if(request.status === 200){
               var counter = responseText;
-              span = document.getElementById('span1');
+              span = document.getElementById('s1');
               span1.innerHTML = counter.toString();
           }
       }  
