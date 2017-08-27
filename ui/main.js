@@ -23,7 +23,7 @@ button.onclick= function(){
     var request = new XMLHttpRequest();
     request.open('GET','http://mjksv007.imad.hasura-app.io/counter',true);
     request.send('null');
-    if(request !== null){
+    if(request.open !== null){
         alert('request open success');
     }
     
