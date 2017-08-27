@@ -22,7 +22,7 @@ button.onclick= function(){
    //Make the request to the counter End point
     var request = new XMLHttpRequest();
     if(request !== null){
-    alert();}
+    alert('requst sucesses');}
     
     //Capture the response and store it in avariable
     request.onreadystatechange = function() {
