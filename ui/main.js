@@ -28,7 +28,7 @@ button.onclick= function(){
           if(request.status === 200){
               var counter = responseText;
               span = document.getElementById('s1');
-              document.write(span);
+              alert(span);
               span.innerHTML = counter.toString();
           }
       }  
